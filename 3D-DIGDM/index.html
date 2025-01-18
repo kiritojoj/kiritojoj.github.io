@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>3D-DIGDM</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="jquery/jqui/smoothness/jquery-ui.min.css">
+    <script src="jquery/jquery-3.4.1.min.js"></script>
+    <script src="jquery/jqui/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="album.css">
+    <script type="text/javascript" src="album.js"></script>
+
+</head>
+<body>
+<!-- Start Hero -->
+<section class="hero">
+    <div class="container">
+
+        <div class="hero-body">
+
+            <div class="level">
+                <h1 class="title level-item has-text-centered">A Discrete Index Graph Diffusion Model for 3D Meshes Synthesis</h1>
+            </div>
+
+            <!-- Authors -->
+            <div class="columns" id="authors">
+                <div class="column has-text-centered">
+                </div>
+                <div class="column has-text-centered">
+                </div>
+                <div class="column has-text-centered">
+                    <nobr>Jian Chen<sup>1</sup></nobr>
+                </div>
+                <div class="column has-text-centered">
+                    <nobr>Yu Chen<sup>1*</sup></nobr>
+                </div>
+                <div class="column has-text-centered">
+                    <nobr>Jieyu Zhao<sup>1</sup></nobr>
+                </div>
+                <div class="column has-text-centered">
+                    <nobr>Chenjun Ma<sup>1</sup></nobr>
+                </div>
+                <div class="column has-text-centered">
+                </div>
+                <div class="column has-text-centered">
+                </div>
+            </div>
+            <!-- End of Authors -->
+
+            <div class="columns is-centered">
+                <div class="column">
+                    <div class="columns is-variable is-2">
+                        <div class="column has-text-centered">
+                        </div>
+                        <div class="column has-text-centered">
+                            <p style="font-size:17px"><sup>1</sup>College of Electrical Engineering and Computer Sciences,<br> Ningbo University</p>
+                        </div>
+                        <div class="column has-text-centered">
+                            <p style="font-size:17px"><sup>*</sup>Corresponding Author</p>
+                        </div>
+                        <div class="column has-text-centered">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="columns">
+                <div class="column has-text-centered">
+                    <a href="http://" class="subtitle is-4">Under Review</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Links -->
+        <div class="hero-foot">
+            <div class="columns is-centered">
+                <div class="column is-two-thirds">
+                    <div class="columns is-variable is-1">
+                        <div class="column has-text-centered">
+                        </div>
+                        <div class="column has-text-centered">
+                            <figure class="" >
+                                <a href="https://"><img width="50" src="imgs/paper.png"  alt="paper"></a>
+                            </figure>
+                            <p><a href="https://">Paper</a></p>
+                        </div>
+                        <div class="column has-text-centered">
+                            <figure class="" >
+                                <a href="https://github.com/kiritojoj/3D-DIGDM"><img width="60" src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5cae3b53b42ebb3dd4175a82_68747470733a2f2f7777772e69636f6e66696e6465722e636f6d2f646174612f69636f6e732f6f637469636f6e732f313032342f6d61726b2d6769746875622d3235362e706e67.png" alt="github"></a>
+                            </figure>
+                            <p><a href="https://github.com/kiritojoj/3D-DIGDM">Code</a></p>
+                        </div>
+                        <div class="column has-text-centered">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Links -->
+
+<!--        <div class="columns is-centered">-->
+<!--            <div id="pic-container" style="position: relative;height:250px;width:1000px;">-->
+<!--                <div id="btn-pre" style="z-index:1;position: absolute;top: 40%;left: 0%;background: none;border:none;"><img id="btnpreicon" width="30" src="imgs/pre.png" ></div>-->
+<!--                <div id="btn-next"style="z-index:1;position: absolute;top: 40%;right: 0%;background: none;border:none;"><img id="btnnexticon" width="30" src="imgs/next.png" ></div>-->
+<!--                <video id="v-content" name="0" style=" z-index:0;position:absolute;left:50%;transform:translateX(-50%);height:250px;width:1000px;" src="videos/scene0079_00.mp4" muted loop autoplay></video>-->
+<!--            </div>-->
+<!--        </div>-->
+
+<!--        <script>-->
+<!--            btnpreicon.onmouseover = function(){-->
+<!--                this.style.cursor = 'pointer';-->
+<!--            }-->
+<!--            btnnexticon.onmouseover = function(){-->
+<!--                this.style.cursor = 'pointer';-->
+<!--            }-->
+<!--        </script>-->
+
+
+
+        <section class="section" id="Overview-Video">
+            <div class="container">
+                <div class="column has-text-centered">
+                    <h2 class="title is-3">Generation Results</h2>
+                </div>
+                </br>
+                <div class="columns is-centered">
+                    <!-- <iframe class="" width="800" height="500" src="imgs/show1.mp4 " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                    <video  style="height:720px;width:1280px;" src="imgs/show1.mp4 " muted loop autoplay></video>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="Overview-Video">
+            <div class="container">
+                <div class="column has-text-centered">
+                    <h2 class="title is-3">Unconditional Generation Denoising process</h2>
+                </div>
+                </br>
+                <div class="columns is-centered">
+                    <img width="300" src="imgs/denoising1.gif"  alt="paper">
+                    <img width="300" src="imgs/denoising2.gif"  alt="paper">
+                    <img width="300" src="imgs/denoising3.gif"  alt="paper">
+                </div>
+            </div>
+        </section>
+<!--        <section class="section" id="In-the-wild">-->
+<!--            <div class="container">-->
+<!--                <div class="column has-text-centered">-->
+<!--                    <h2 class="title is-3">In-the-wild Showcases</h2>-->
+<!--                </div>-->
+<!--                </br>-->
+
+<!--                <div class="columns is-centered">-->
+<!--                    <video  style="height:175px;width:800px;" src="videos/demo1.mp4" muted loop autoplay></video>-->
+<!--                </div>-->
+
+<!--                </br>-->
+
+<!--                <div class="columns is-centered">-->
+<!--                    <video  style="height:175px;width:800px;" src="videos/demo2.mp4" muted loop autoplay></video>-->
+<!--                </div>-->
+<!--                </br>-->
+<!--                <div class="columns is-centered">-->
+<!--                    <p>-->
+<!--                        We captured data with a hand-held phone at home.-->
+<!--                    </p>-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </section>-->
+
+        <section class="section" id="Abstract">
+            <div class="container">
+                <div class="column has-text-centered">
+                    <h2 class="title is-3">Abstract</h2>
+                </div>
+                </br>
+                <div class="columns is-centered">
+                    <img width="800" src="imgs/pipeline.png"  alt="paper">
+                </div>
+                <div class="columns is-centered">
+                    <div class="column is-two-thirds has-text-justified">
+                        <p>
+                            The generation of 3D meshes is critical in numerous applications, evidenced by the growing popularity and attention towards interactive generative models. Although diffusion models currently stand out as powerful interactive generative models, they are confined to the 2D domain. Performing direct diffusion and denoising on complex 3D meshes with dense vertices and faces is impractical, time-consuming, and resource-intensive. In this work, we discretize the 3D space and incorporate the intricate 3D mesh topology within the Truncated-Signed Distance Fields (T-SDFs) of each discrete cell vertex and propose an efficient discrete index graph diffusion model for T-SDFs. We further divide T-SDFs into multiple local shapes and encode the complete object as a discretized 3D grid based on codebook indices, with each index labeled for its position to preserve its discretization while reducing the input dimensionality. A graph neural network is trained on these latent spaces to jointly denoise the diffusion process on continuous coordinates and discrete codebook indices to incorporate local and global information. As we delete the most frequently repeated codebook indices in the 3D grid, the input size of the diffusion model becomes variable. We employ diverse conditional embeddings from task-specific autoencoders to estimate the quantity of codebook indices in various 3D grids and achieve interactive conditional synthesis by utilizing classifier-free guidance to sample from diverse normal distributions. Our model exhibits exceptional generative performance, supported by experimental results showcasing its effectiveness in various generative tasks, including shape completion, single-view 3D generation, and text-driven generation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <!-- <section class="section" id="Comparsion">
+           <div class="container">
+               <div class="column has-text-centered">
+                   <h2 class="title is-3">Comparison with state-of-the-art methods</h2>
+               </div>
+               </br>
+               <div class="columns is-centered">
+                   <img width="900" src="imgs/comparison.png">
+               </div>
+               <div class="columns is-centered">
+                   <div class="column is-two-thirds has-text-justified">
+                       <p>
+                           We conducted experiments on ScanNet dataset. This figure shows some qualitative results. While the original NeRF fails to predict reasonable geometry, our method generates visually appealing depth maps. Note that Atlas is trained on ScanNet with groundtruth depth supervision.
+                       </p>
+                   </div>
+               </div>
+           </div>
+       </section> -->
+
+       <!-- <section class="section" id="view-synthesis">
+           <div class="container">
+               <div class="column has-text-centered">
+                   <h2 class="title is-3">View Synthesis Results</h2>
+               </div>
+               </br>
+               <div class="columns is-centered">
+                   <img width="600" src="imgs/view_synthesis.png">
+               </div>
+               <div class="columns is-centered">
+                   <div class="column is-two-thirds has-text-justified">
+                       <p>
+                           Although view synthesis is not the main focus of our work, we observe that the proposed guided optimization scheme is beneficial to the view synthesis quality of NeRF. Moreover, without whole-space sampling procedure and coarse-to-fine strategy, our method speed up training procedure for 3 times.
+                       </p>
+                   </div>
+               </div>
+           </div>
+        </section> -->
+
+
+        <section class="section" id="BibTeX">
+            <div class="container content">
+                <div class="columns is-centered">
+                    <div class="column is-two-thirds has-text-justified">
+                        <h2 class="titile">Citation</h2>
+                        <pre><code>@inproceedings{chen2025digdm,
+  author    = {Chen, Jian and Chen, Yu and Zhao, Jieyu and Ma, Chenjun},
+  title     = {A Discrete Index Graph Diffusion Model for 3D Meshes Synthesis},
+  booktitle = {},
+  year = {2025}
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="columns is-centered" style="margin-bottom:10px; font-size: medium;">
+            <hr>
+            Thanks to  &nbsp <a href="https://roxanneluo.github.io/" target="_blank">Luo Xuan</a> &nbsp for the &nbsp  <a href="https://roxanneluo.github.io/Consistent-Video-Depth-Estimation/" target="_blank">website template</a>.
+        </footer>
+</body>
+</html>
